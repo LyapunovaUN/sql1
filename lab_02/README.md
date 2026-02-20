@@ -25,7 +25,7 @@ INNER JOIN customers c ON s.customer_id = c.customer_id
 INNER JOIN products p ON s.product_id = p.product_id
 WHERE p.model = 'Model Chi'
 ORDER BY s.sales_transaction_date DESC;
-````
+```
 
 ### Пояснение
 
