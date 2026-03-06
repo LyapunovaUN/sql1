@@ -36,4 +36,5 @@ SELECT
 FROM sales s
 INNER JOIN customers c ON s.customer_id = c.customer_id
 WHERE c.state = 'CA'
+
 ORDER BY s.sales_transaction_date ASC;
