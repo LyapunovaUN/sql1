@@ -6,6 +6,7 @@ FROM sales
 GROUP BY year, quarter
 ORDER BY year, quarter;
 
+
 SELECT c.customer_id
 FROM customers c
 WHERE NOT EXISTS (
@@ -13,6 +14,7 @@ WHERE NOT EXISTS (
     FROM dealerships d
     WHERE point(c.longitude, c.latitude) <@> point(d.longitude, d.latitude) <= 500
 );
+
 
 SELECT 
     CASE 
